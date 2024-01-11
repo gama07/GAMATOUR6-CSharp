@@ -1,0 +1,105 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  gap: 100px;
+  padding: 20px;
+}
+
+.card {
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.15);
+  transition: 0.4s;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  background-color: black; /* Alterado para fundo preto */
+  color: white; /* Alterado para texto branco */
+}
+
+.card:hover {
+  transform: scale(0.95);
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.25);
+}
+
+.card .card_title {
+  text-align: justify;
+  font-size: 1.0rem;
+  margin: 0.5rem 0;
+}
+
+/* Estilos adicionados para ajustar o layout responsivo */
+@media (max-width: 600px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    margin: 10px;
+  }
+}
+
+@media (min-width: 576px) {
+  .card {
+    margin: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .card {
+    margin: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .card {
+    margin: 25px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .card {
+    margin: 30px;
+  }
+}
+
+/* Estilos da Barra de Pesquisa */
+.barra-pesquisa {
+  background: black;
+  padding: 20px;
+  border: 3px solid #29d9d5;
+}
+
+.barra-pesquisa label {
+  color: white;
+}
+
+.barra-pesquisa input {
+  background: black;
+  color: white;
+  border: none;
+  border-bottom: 2px solid #29d9d5;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.barra-pesquisa input:focus {
+  outline: none;
+  border-bottom: 2px solid #29d9d5;
+}
+
+.barra-pesquisa input::placeholder {
+  color: white;
+}
+
+.barra-pesquisa button {
+  background: #29d9d5;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.barra-pesquisa button:hover {
+  background: #29d9d5;
+}

@@ -1,0 +1,132 @@
+
+*,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600&display=swap');
+
+
+body {
+  background-color: black;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Estilos para as seções da página */
+.section {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Navbar */
+#navbar {
+  background: black;
+  padding: 10px 0;
+}
+
+#logo {
+  font-size: 2.0rem;
+  font-weight: bolder;
+  color: white;
+  text-shadow: 0px 1px 1px black;
+  margin-bottom: 5px;
+}
+
+#logo span {
+  color: #29d9d5;
+}
+
+.navbar-nav {
+  margin-left: 20px;
+}
+
+.nav-item .nav-link {
+  font-size: 16px;
+  font-weight: 550;
+  color: #29d9d5;
+  letter-spacing: 1px;
+  border-radius: 3px;
+  transition: 0.5s ease;
+}
+
+.nav-item .nav-link:hover {
+  background: #29d9d5;
+  color: black;
+}
+
+#navbar form button {
+  background: #29d9d5;
+  color: white;
+  border: none;
+}
+
+/* Destinos */
+.destinos {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 550;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+.destinos .card {
+  background-color: black;
+}
+
+.destinos .card .card-body {
+  background-color: black;
+}
+
+.destinos .card .card-body h3,
+.destinos .card .card-body h6 {
+  color: white;
+}
+
+.destinos .card .card-body a.btn {
+  background-color: #29d9d5;
+  color: white;
+  border: none;
+}
+
+.btn,
+.destinos .card .card-body a.btn {
+  background-color: #29d9d5;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+/* Efeito de hover para botões na navbar e na seção destinos */
+.btn:hover,
+.destinos .card .card-body a.btn:hover {
+  background-color:#29d9d5;
+}
+
+/* Footer */
+.footer {
+  background-color: black;
+  color: white;
+  padding: 20px 0;
+  margin-top: 0;
+}
+
+.main-txt {
+  background-color: black;
+}
+
+.main-txt h1 {
+  color: white;
+}
